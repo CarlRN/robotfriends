@@ -9,7 +9,7 @@ import {Provider} from 'react-redux'; //it's for pass down easly the store (stat
 import {createStore, applyMiddleware, combineReducers} from 'redux';
 import {searchRobots,requestRobots} from './reducers.js' ;
 
-import { createLogger } from 'redux-logger'; //middleware
+import { createLogger } from 'redux-logger'; //middleware for a nice logger during development
 
 import thunkMiddleware from 'redux-thunk'; //handle asynchronous actions
 

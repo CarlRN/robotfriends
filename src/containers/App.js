@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+import Header from '../components/Header';
 import SearchBox from '../components/SearchBox';
 import CardList from '../components/CardList';
 import Scroll from '../components/Scroll';
@@ -48,7 +49,7 @@ class App extends React.Component {
       return isPending ? <h1 className='tc'>Loading...</h1> :   
        ( 
         <div className="tc">
-          <h1 id='title' className='f1'>RoboFriends</h1>        
+          <Header />       
           <SearchBox onSearchFieldChange={onSearchFieldChange}/>
           <Scroll>
             <ErrorBoundry>
