@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import * as serviceWorker from './serviceWorker';
 import './index.css';
 import 'tachyons';
 import App from './containers/App';
@@ -28,3 +29,5 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+
+serviceWorker.register();
